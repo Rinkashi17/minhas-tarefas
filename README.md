@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+<h1 align="center">
+  To Do List em React
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="./public/screenshot.png" alt="Demonstração do Portfolio em React" width="100%">
+</div>
 
-## Available Scripts
+# 📝 Minhas Tarefas
 
-In the project directory, you can run:
+Uma aplicação de gerenciamento de tarefas (To-Do List) moderna e robusta, desenvolvida como parte do curso de Engenheiro Front-End da EBAC. O projeto foca em organização, filtragem dinâmica e persistência de estado.
 
-### `npm start`
+## 🚀 Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este projeto foi construído com o que há de mais moderno no ecossistema React:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React** (v18+)
+- **TypeScript** - Tipagem estática para maior segurança no desenvolvimento.
+- **Redux Toolkit** - Gerenciamento de estado global eficiente.
+- **Styled Components** - Estilização baseada em componentes com suporte a Transient Props.
+- **React Router DOM** - Navegação entre a lista principal e a tela de cadastro.
 
-### `npm test`
+## ✨ Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **CRUD Completo:** Adicione, edite e remova tarefas com facilidade.
+- **Filtragem Inteligente:** Filtre suas tarefas por:
+  - Termo de busca (nome).
+  - Prioridade (Urgente, Importante, Normal).
+  - Status (Pendente, Concluída).
+- **Contadores Dinâmicos:** Visualize a quantidade de tarefas em cada categoria em tempo real.
+- **Interface Responsiva:** Layout adaptável para diferentes tamanhos de tela.
+- **Estilização Dinâmica:** Cores das tags mudam automaticamente com base na prioridade ou status selecionado.
 
-### `npm run build`
+## 🛠️ Como Executar o Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/Rinkashi17/minhas-tarefas.git](https://github.com/Rinkashi17/minhas-tarefas.git)
+Acesse a pasta do projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Bash
+cd minhas-tarefas
+Instale as dependências:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Bash
+npm install
+# ou
+yarn install
+Inicie o servidor de desenvolvimento:
 
-### `npm run eject`
+Bash
+npm start
+# ou
+yarn start
+A aplicação estará disponível em http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+📐 Estrutura de Pastas
+Plaintext
+src/
+├── components/     # Componentes reutilizáveis (FiltroCard, Tarefa, etc.)
+├── containers/     # Componentes de layout (BarraLateral, ListaDeTarefas)
+├── pages/          # Páginas da aplicação (Home, Cadastro)
+├── store/          # Configuração do Redux e Slices (reducers)
+├── styles/         # Estilos globais e variáveis de cores
+├── utils/          # Enums e constantes auxiliares
+└── App.tsx         # Componente principal e rotas
+📝 Notas de Desenvolvimento
+Durante o desenvolvimento, foram aplicadas boas práticas como:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Transient Props ($): Uso do prefixo $ em props do Styled Components para evitar avisos de atributos desconhecidos no DOM.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Seletores Performáticos: Uso de useSelector direcionado para fatias específicas do estado, evitando re-renderizações desnecessárias.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Desenvolvido por Rinkashi17 🚀
